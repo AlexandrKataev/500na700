@@ -2,5 +2,20 @@ import * as nodePath from 'path';
 
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-const bulidFolder = './dist';
+const buildFolder = './dist';
 const srcFolder = './src';
+
+export const path = {
+  build: {
+    files: `${srcFolder}/files/`,
+  },
+  src: {
+    files: `${srcFolder}/files/**/*.*`,
+  },
+  watch: {},
+  clean: buildFolder,
+  buildFolder: buildFolder,
+  srcFolder: srcFolder,
+  rootFolder: rootFolder,
+  ftp: ``,
+};
