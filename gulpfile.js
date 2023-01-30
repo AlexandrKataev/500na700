@@ -6,8 +6,8 @@ import { reset } from './gulp/tasks/reset.js';
 import { html } from './gulp/tasks/html.js';
 
 global.app = {
-  path: path,
-  gulp: gulp,
+  path,
+  gulp,
 };
 
 const watcher = () => {
